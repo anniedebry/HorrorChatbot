@@ -26,10 +26,11 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
+@SuppressWarnings("serial")
 public class View extends JPanel
 {
 	Control control;
-	State state;
+//	State state;
 	
 	private SpringLayout layout;
 	private JScrollPane chatPane;
@@ -44,10 +45,10 @@ public class View extends JPanel
 	//emotion boolean statements
 	boolean neutral = true;
 
-	public View(Control control, State state)
+	public View(Control control)
 	{ 
 		this.control = control;
-		this.state = state;
+//		this.state = state;
 		
 		//window dimensions
 		Dimension d = new Dimension(1200, 1000);

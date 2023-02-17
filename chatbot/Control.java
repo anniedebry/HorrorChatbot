@@ -34,11 +34,11 @@ public class Control implements Runnable
 		
 		this.myChatbot = new Chatbot("Monica");
 		
-		state = new State();
-		view = new View(this, state);
-		
-		state.startFrame();
-		state.finishFrame();
+//		state = new State();
+		view = new View(this);
+//		
+//		state.startFrame();
+//		state.finishFrame();
 		
 	}
 	
